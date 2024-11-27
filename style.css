@@ -1,0 +1,362 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: #2a2a72;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h2,
+h3 {
+    font-size: 2rem;
+    color: #2a2a72;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2a2a72;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+h2:hover,
+h3:hover {
+    color: #ff6f61;
+    border-bottom-color: #ff6f61;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1rem;
+}
+
+table th {
+    background: #2a2a72;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background: #ffe3dc;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Lists */
+ul,
+ol {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul li,
+ol li {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+ul li strong {
+    color: #ff6f61;
+}
+
+/* Highlight Box */
+.examples {
+    margin-top: 20px;
+    background: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.examples:hover {
+    background: #d1f0ff;
+    transform: translateY(-3px);
+}
+
+/* Images and Videos */
+img,
+iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Buttons (Optional) */
+button {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff3c2f;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header {
+        font-size: 2.2rem;
+        padding: 15px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    p,
+    ul li,
+    ol li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p,
+    ul li,
+    ol li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p,
+    ul li,
+    ol li {
+        font-size: 0.9rem;
+    }
+
+    .examples {
+        padding: 10px;
+    }
+}
+
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: #f4f4f4;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    pre {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    pre {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #1a1a1a;
+    color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    word-wrap: break-word; /* Ensures text breaks to fit within the cell */
+}
+
+table th {
+    background: #333;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+table td {
+    font-size: 1rem;
+}
+
+table tr:hover {
+    background: #444;
+}
+
+/* For smaller screens, add horizontal scrolling */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto; /* Enables horizontal scrolling */
+        white-space: nowrap; /* Prevents breaking of content in cells */
+    }
+    table th,
+    table td {
+        white-space: normal; /* Allows normal wrapping inside cells */
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    table {
+        font-size: 0.9rem; /* Adjust font size for readability */
+    }
+    table th,
+    table td {
+        padding: 8px; /* Reduce padding for compactness */
+    }
+}
+
+
+/* Base Styles for Hidden Sections */
+.section-content {
+    display: none; /* Initially hidden */
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.section-content.active {
+    display: block;
+    opacity: 1;
+    max-height: 9900px; /* Adjust as needed */
+    transition: max-height 0.4s ease-in, opacity 0.4s ease-in;
+}
+
+/* Toggle Button Styles */
+.toggle-btn {
+    display: inline-block;
+    margin-bottom: 10px;
+    background: #2a2a72;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background: #ff6f61;
+}
+
+.toggle-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff6f61;
+}
